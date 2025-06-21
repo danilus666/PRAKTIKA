@@ -1,0 +1,100 @@
+<html>
+ <head>
+  <style>
+    body{
+      font-family: 'Arial';
+      font-size: 20px;
+    }
+
+    p, img {
+      border: 3px solid peru;
+    }
+
+    p {
+      font-size: 20px;
+      background-color: lightblue;
+    }
+    
+    a {
+      color: black;
+      font-size: 20px;
+      border: 2px solid darkblue;
+      background-color: lightblue;
+    }
+    
+    img {
+      border: 3px solid peru;
+      width: 300px; /* Фиксированная ширина для всех изображений */
+      height: 200px; /* Фиксированная высота для всех изображений */
+      object-fit: cover; /* Сохраняет пропорции изображений */
+      display: block;
+      margin: 10px auto; /* Центрирование изображений */
+    }
+    
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px; /* Расстояние между изображениями */
+      margin: 20px 0;
+    }
+    
+    table {
+      background-color: lightblue;
+      font-size: 20px;
+      text-align: center;
+      border: 1px solid brown;
+      border-collapse: collapse;
+    }
+    
+    td, th {
+      border: 1px solid brown;
+    }
+
+    h1{
+      text-align: center;
+    }
+
+    h2, h3, h4, h5, h6 {
+      color: darkblue;
+    }
+
+    .selector {
+      background-color: burlywood;
+      color: darkblue;
+      border: 1px solid brown;
+    }
+  </style>
+ </head>
+ <body>
+  <a href="#schedule">Расписание</a> <a href="#about">О занятиях</a> <a href="#photo">Фотографии</a>
+  <h1>Клуб верховой езды</h1>
+  <img src="https://avatars.mds.yandex.net/i?id=8660b2e6127fdf2e89420513a7aa56ba_l-5221728-images-thumbs&n=13">
+  <h2 id="about">Как проходят занятия</h2>
+     <p>На занятиях вы будете не только практиковаться в верховой езде, но и узнаете, как ухаживать за лошадьми. Уже на первом занятии сможете покормить животных. Научитесь кормить, поить, мыть и расчёсывать вашего скакуна, будете одевать и снимать сбрую.</p>
+     <p>Тренер вместе с вами подберет вам лошадь, с учётом ваших навыков верховой езды. Вы будете практиковаться верхом на свежем воздухе под контролем тренера, а на более поздних занятиях вас ждёт прогулка по лесу.</p>
+  <p>После окончания курса, по договоренности с клубом, можете приходить на прогулку — навестить своего скакуна, с которым вы обязательно подружитесь.</p>
+  <h2 id="schedule">Расписание</h2>
+  <table>
+         <tr>
+             <th>Название <br/> программы</th>
+             <th>Время занятий</th>
+         </tr>
+         <tr>
+             <td>Вводный курс</td>
+             <td>суб. 12-16</td>
+         </tr>
+         <tr>
+             <td>Пони детям</td>
+             <td>суб. 10-12</td>
+         </tr>
+     </table>
+  <h2 id="photo">Фотографии</h2>
+  <div class="image-container">
+   <img src="https://i.pinimg.com/736x/d5/0c/58/d50c5868e5fe81002ff5471136a92033.jpg">
+   <img src="https://i.ytimg.com/vi/n5zqX9XnqeM/maxresdefault.jpg">
+   <img src="https://yt3.googleusercontent.com/o9Tn9OIlXpzGhJ3a9goz6gdM_yjAGDKdzsIxkjXq0pPwgXkqVZi45KcR70OYEAANaQFOEwR-9Q=s900-c-k-c0x00ffffff-no-rj">
+   <img src="https://i.pinimg.com/originals/e0/b8/fc/e0b8fc0a64ecfcd006adac0558ab9ef4.jpg">
+  </div>
+ </body>
+</html>

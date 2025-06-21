@@ -1,0 +1,248 @@
+<html>
+    <head>
+        <style>
+            /* Общие стили для header и nav */
+            header {
+                background: lightskyblue; 
+                display: flex;
+                align-items: flex-end;
+                padding: 10px 20px;
+                height: 80px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            }
+            
+            header img {
+                height: 50px;
+                margin-right: 15px;
+                margin-bottom: 5px;
+            }
+
+            header p {
+                font-family: "Arial";
+                font-size: 20px;
+                margin-bottom: 5px;
+            }
+            
+            nav {
+                background: #f0f0f0;
+                padding: 10px 20px;
+                display: flex;
+                justify-content: space-around;
+                box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+                border: 1px solid gray;
+            }
+            
+            nav a {
+                font-family: "Arial";
+                font-size: 18px;
+                color: gray;
+                text-decoration: none;
+                padding: 5px 10px;
+            }
+            
+            nav a:hover {
+                color: #0066cc;
+            }
+            
+            /* Стили для main */
+            main {
+                padding: 20px;
+            }
+            
+            main h1 {
+                font-size: 40px;
+                font-weight: bold;
+                color: purple;
+                text-align: center;
+                font-family: "Arial";
+                font-style: italic;
+            }
+
+            /* Стили для секций */
+            .section h1 {
+                font-family: "Arial";
+                color: blue;
+                font-size: 30px;
+                font-weight: normal;
+                text-align: left;
+                margin: 20px 0 10px 0;
+            }
+            
+            .section p {
+                font-family: "Arial";
+                font-size: 16px;
+                line-height: 1.5;
+                margin: 10px 0;
+            }
+            
+            .section img {
+                border-radius: 15px; 
+                border: 1px solid blue;
+                margin: 10px 0;
+            }
+            
+            /* Стили для кнопок */
+            button {
+                font-family: "Arial";
+                border: 2px solid blue;
+                font-size: 15px;
+                color: blue;
+                width: 90px;
+                height: 40px;
+                background: white;
+                cursor: pointer;
+                margin: 10px 0;
+            }
+            
+            button:hover {
+                background: #f0f0f0;
+            }
+            
+            .back-to-top {
+                margin-top: 20px;
+            }
+
+            /* Стили для rounded-box */
+            .rounded-box {
+                background-color: orangered;
+                border-radius: 15px;
+                padding: 20px;
+                display: block;
+                width: calc(100% - 40px);
+                margin: 20px 0;
+                font-family: Arial;
+                font-size: 25px;
+                line-height: 1.5;
+                text-align: left;
+                box-sizing: border-box;
+                color: white;
+            }
+
+            /* Стили для footer */
+            footer {
+                background-color: #8fddf2;
+                padding: 10px;
+            }
+
+            footer p {
+                background-color: white;
+                padding: 5px;
+                font-family: "Arial";
+                font-size: 20px;
+                margin: 5px 0;
+            }
+            
+            /* Стили для формы */
+            form {
+                font-family: "Arial";
+            }
+            
+            .city-selector {
+                display: flex; 
+                flex-direction: column; 
+                align-items: center; 
+                font-family: Arial; 
+                font-size: 20px; 
+                margin: 20px auto; 
+                max-width: 800px;
+            }
+            
+            .city-selector label {
+                margin-right: 10px;
+            }
+            
+            select {
+                padding: 5px; 
+                font-family: Arial; 
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="https://t4.ftcdn.net/jpg/05/36/46/59/360_F_536465997_A7Jug6J2CLDRVm9euPkqdiyXCHPWGRrw.jpg" alt="Логотип">
+            <p><b>Внимание! Сезонные скидки 40%</b> <a href="#season-offer">Подробнее</a></p>
+        </header>
+        <nav>
+            <a href="#products">Продукция</a>
+            <a href="#how-to-buy">Как купить?</a>
+            <a href="#wholesale">Оптом</a>
+            <a href="#about">О компании</a>
+        </nav>
+        <main>
+            <h1>Fantastic Party</h1>
+
+            <div class="city-selector">
+                <form style="display: flex; align-items: center; gap: 10px;">
+                    <label for="city">Выберите город для доставки:</label>
+                    <select id="city" name="city">
+                        <option value="Novosibirsk">Новосибирск</option>
+                        <option value="Barnaul">Барнаул</option>
+                        <option value="Biysk">Бийск</option>
+                    </select>
+                </form>
+            </div>
+
+            <section id="products">
+                <div class="rounded-box">
+                    <img src="https://goods-photos.static1-sima-land.com/items/3866129/3/1600.jpg?v=1728556505" width="100" alt="Хлопушки">
+                    <p>Хлопушки</p>
+                </div>
+
+                <div class="rounded-box">
+                    <img src="https://avatars.mds.yandex.net/i?id=43b6d3c671f02ad7697118bd06a4d3a0_l-5161363-images-thumbs&n=13" width="100" alt="Петарды">
+                    <p>Петарды</p>
+                </div>
+                
+                <div class="rounded-box">
+                    <img src="https://avatars.mds.yandex.net/i?id=6b5ab649891f24979c4a6d421f66c58b_l-12572791-images-thumbs&n=13" width="100" alt="Фонтаны">
+                    <p>Фонтаны</p>
+                </div>
+
+                <div class="rounded-box">
+                    <img src="https://avatars.mds.yandex.net/i?id=2f4e88f2b69ff5c90768816846bc8504_l-5244544-images-thumbs&n=13" width="100" alt="Фестивальные шары">
+                    <p>Фестивальные шары</p>
+                </div>
+            </section>
+
+            <section id="season-offer" class="section">
+                <h1>Сезонное предложение</h1>
+                <p>С 5 декабря по 5 марта действует предложение: скидка на всю продукцию 40%.</p>
+                <p><b><i>Спешите купить праздник выгодно!</i></b></p>
+                <img src="https://img.freepik.com/premium-vector/christmas-themed-illustration_278696-50.jpg?semt=ais_hybrid" width="500" alt="Сезонное предложение">
+            </section>
+
+            <section id="how-to-buy" class="section">
+                <h1>Как приобрести?</h1>
+                <button onclick="document.querySelector('footer').scrollIntoView({behavior: 'smooth'})">Контакты</button>
+                <p>Вы можете сделать заказ по телефону или приобрести товары в магазине.</p>
+                <p>В магазине вас ждёт подробный рассказ о нашей продукции.</p>
+                <p>При посещении магазина можно заказать доставку на дом/в офис.</p>
+                <p>Вы также можете по телефону сделать предзаказ для резервирования товаров в магазине.</p>
+            </section>
+
+            <section id="wholesale" class="section">
+                <h1>Оптом</h1>
+                <p>От 100 000₽ - скидка 45%</p>
+                <p>От 200 000₽ - скидка 50%</p>
+                <img src="https://i.pinimg.com/736x/9b/df/52/9bdf52508e86e9b2d90600f4c0040860.jpg" width="150" alt="Оптовые заказы">
+            </section>
+
+            <section id="about" class="section">
+                <h1>О компании</h1>
+                <p>Наша история началась с магазина, открывшегося в 2005 году. Тогда мы предлагали только хлопушки.</p>
+                <p>В 2015 году у нас появился сайт, а ассортимент пополнился новыми видами товаров.</p>
+                <img src="https://avatars.mds.yandex.net/i?id=912744c8db8c5e02b6c32932dbb0e3852f134d4d-9264516-images-thumbs&n=13" width="150" alt="О компании">
+                <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Наверх</button>
+            </section>
+        </main>
+
+        <footer>
+            <p><b>Контакты</b></p>
+            <p>Адрес: г. Ремонтоград, ул. Материнская, 15</p>
+            <p>Тел.: 2502-3716</p>
+        </footer>
+    </body>
+</html>
